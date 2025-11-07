@@ -3,7 +3,7 @@ Requirements
 [ ] Three Distinct CSS font-family Declarations
 [ ] One Google Font or Uploaded Font
 [ ] An Unordered **or** Ordered List (<ul> or <ol>)
-[ ] Three Images
+[+] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include :hover Effect 
@@ -27,7 +27,10 @@ Select ONE Additional Feature to Add
   font-family: 'Courier New', Courier, monospace;
 }
 
-body {background-color: rgba(250, 235, 215, 0.5);}
+body {background-color: rgba(250, 235, 215, 0.5);
+border-radius: 20px;
+width: 1300px;
+margin: auto;}
 
 h1 {background-color: rgba(255, 235, 205, 0.601);
    width: 800px;
@@ -37,32 +40,88 @@ img {width: 500px;
 border-radius: 8px;
 border-width: 5px;
 border-color: black;
-border-style: double;}  
+border-style: double;
+}  
+
+img:hover {transform: rotate(5deg);transition: 1s;}
+
+.FIRE:hover {transform: rotate(85deg);}
 
 .FIRE {transform: rotate(90deg);}
+
+ol {background-color: rgba(80, 150, 148, 0.75);
+  width: 900px;
+border-radius: 8px;
+border-width: 5px;
+border-color: black;
+border-style:solid;
+} 
+
+h1 {background-color: rgba(46, 82, 60, 0.5);
+border-radius:8px ;
+width: 1200px;
+margin: auto;}
+
+
+
 
   </style>
 </head>
 <body>
 <center>
-  <br><h1>My Guide Too The Land Of Ooo</h1>
+  <br><h1>The Guide Too The Land Of Ooo</h1>
   
   <h2>Candy Kingdom</h2>
   <hr>
   <img src="Candy_Kingdom.png" alt="Candy">
-  <p>About Content Element #1</p>
+  <h3>Come Visit</h3>
+  <ol id="Candy_Places">
+    <br>
+    <li>Princess Bubblegum's Castle: The central castle 
+      and primary residence of Princess Bubblegum.</li><br>
+    <li>Candy Tavern: A prominent establishment,
+         often seen as a central building or location.</li><br>
+    <li>Candy Kingdom Mental Hospital: 
+      A separate castle-shaped building for mental patients.</li><br>
+    </ol>
   <br><br>
 
   <h2>The Fiery Fire Kingdom</h2>
   <hr>
   <img class="FIRE" src="Fire Kingdom.png" alt="FIREEE">
-  <p>About Content Element #2</p>
+  <h3>Come Visit</h3>
+  <ol id="Fire_Kingdom">
+    <br>
+    <li>Fire Palace: The royal castle and seat of power, 
+      home to the Flame King and Flame Princess.</li><br>
+    <li>Fire Kingdom Core: The kingdom's power core, 
+      which is vital to its operation.
+    </li><br>
+    <li>Firebreak Island: An island region near the Fire Kingdom,
+      that is made of hardened lava and dominated by a volcano.</li>
+      <br>
+    </ol>
   <br><br>
 
   <h2>The Ice Kingdom</h2>
   <hr>
   <img src="Ice_Kingdom.png" alt="ICEICEBABY">
-  <p>About Content Element #3</p>
+   <h3>Come Visit</h3>
+  <ol id="Ice_List">
+    <br>
+    <li>The Ice King's Castle a large, 
+      hollowed-out ice structure located in the middle of the Ice Kingdom,
+       which is a frigid land populated mostly by penguins. 
+       The castle's interior is chaotic and reflects the Ice King's 
+       personality, featuring a mix of furnished rooms, 
+       secret chambers, and dungeons, 
+       alongside piles of trash and ice and snow-made items.
+        Key features include a bedroom with a fancy bed, 
+        a drum set, and gym equipment, a kitchen, 
+        and a cage for holding princesses captive. </li><br>
+    <li>ICE</li><br>
+    <li>AND YOU'LL NEVER GUESS... MORE ICEEE</li><br>
+      </ol>
   <br><br>
 
 </center>
