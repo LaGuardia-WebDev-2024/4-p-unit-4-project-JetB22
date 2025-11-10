@@ -1,12 +1,12 @@
 <!--Unit 4 Project
 Requirements
-[ ] Three Distinct CSS font-family Declarations
-[ ] One Google Font or Uploaded Font
-[ ] An Unordered **or** Ordered List (<ul> or <ol>)
+[+] Three Distinct CSS font-family Declarations
+[+] One Google Font or Uploaded Font
+[+] An Unordered **or** Ordered List (<ul> or <ol>)
 [+] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include :hover Effect 
+[ yes ] Feature 1 - Include :hover Effect 
 [ no ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
 [ no ] Feature 4 - Include Hand Drawn Border
@@ -20,6 +20,18 @@ Select ONE Additional Feature to Add
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
   <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&display=swap');
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
  html{background-image:url(b8zmim10bki41.jpg);
   background-size :cover;
   background-repeat: no-repeat;
@@ -30,7 +42,8 @@ Select ONE Additional Feature to Add
 body {background-color: rgba(250, 235, 215, 0.5);
 border-radius: 20px;
 width: 1300px;
-margin: auto;}
+margin: auto;
+text-align: center;}
 
 h1 {background-color: rgba(255, 235, 205, 0.601);
    width: 800px;
@@ -55,26 +68,40 @@ border-radius: 8px;
 border-width: 5px;
 border-color: black;
 border-style:solid;
+ font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-size: larger;
+  margin: auto;
 } 
+
+h2 {font-weight: bolder;
+}
 
 h1 {background-color: rgba(46, 82, 60, 0.5);
 border-radius:8px ;
 width: 1200px;
 margin: auto;}
 
+h3 {background-color: antiquewhite;
+width: 700px;
+margin: auto;}
 
+#C {color: violet;}
 
+#F {color: red;}
 
+#I {color: aqua;}
   </style>
 </head>
 <body>
-<center>
-  <br><h1>The Guide Too The Land Of Ooo</h1>
+
+  <br><h1 class="bebas-neue-regular">The Guide Too The Land Of Ooo</h1>
   
-  <h2>Candy Kingdom</h2>
-  <hr>
+  <h2 id="C">Candy Kingdom</h2>
+  <hr><br>
   <img src="Candy_Kingdom.png" alt="Candy">
-  <h3>Come Visit</h3>
+  <br><br>
+  <h3>Come Visit</h3><br>
   <ol id="Candy_Places">
     <br>
     <li>Princess Bubblegum's Castle: The central castle 
@@ -86,10 +113,11 @@ margin: auto;}
     </ol>
   <br><br>
 
-  <h2>The Fiery Fire Kingdom</h2>
-  <hr>
+  <h2 id="F">The Fiery Fire Kingdom</h2>
+  <hr><br>
   <img class="FIRE" src="Fire Kingdom.png" alt="FIREEE">
-  <h3>Come Visit</h3>
+  <br><br>
+  <h3>Come Visit</h3><br>
   <ol id="Fire_Kingdom">
     <br>
     <li>Fire Palace: The royal castle and seat of power, 
@@ -103,10 +131,11 @@ margin: auto;}
     </ol>
   <br><br>
 
-  <h2>The Ice Kingdom</h2>
-  <hr>
+  <h2 id="I">The Ice Kingdom</h2>
+  <hr><br>
   <img src="Ice_Kingdom.png" alt="ICEICEBABY">
-   <h3>Come Visit</h3>
+  <br><br>
+   <h3>Come Visit</h3><br>
   <ol id="Ice_List">
     <br>
     <li>The Ice King's Castle a large, 
@@ -123,7 +152,5 @@ margin: auto;}
     <li>AND YOU'LL NEVER GUESS... MORE ICEEE</li><br>
       </ol>
   <br><br>
-
-</center>
 </body>
 </html>
